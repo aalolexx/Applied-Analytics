@@ -7312,6 +7312,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7522,12 +7523,12 @@ a.anchor-link {
 </pre></div>
 <p>Without Git:</p>
 <ol>
-<li>Open the GitHub repository: <br/></li>
+<li>Open the GitHub repository: <br/>
+<a href="https://github.com/Maxlja/Applied-Analytics">https://github.com/Maxlja/Applied-Analytics</a> <br/></li>
+<li>Click on the green Code button.<br/></li>
+<li>Select Download ZIP. <br/></li>
+<li>Extract the downloaded ZIP file. <br/></li>
 </ol>
-<p><a href="https://github.com/Maxlja/Applied-Analytics">https://github.com/Maxlja/Applied-Analytics</a> <br/>
-2) Click on the green Code button.<br/>
-3) Select Download ZIP. <br/>
-4) Extract the downloaded ZIP file. <br/></p>
 </div>
 </div>
 </div>
@@ -7543,10 +7544,10 @@ Naviagte to the folder of the first course day:</p>
 <div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>path/Applied-Analytics/01_Monday
 </pre></div>
 <p>Create a new environment for today and install the required packages from requirements.txt (you want to repeat this process for each day of the course).</p>
-<div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>AA_session1<span class="w"> </span>--file<span class="w"> </span>requirements.txt
+<div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yml
 </pre></div>
 <p>Activate the environment and run the IDE of your choice:</p>
-<div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>AA_session1
+<div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>aa_monday
 </pre></div>
 <div class="highlight"><pre><span></span>jupyter<span class="w"> </span>notebook
 </pre></div>
